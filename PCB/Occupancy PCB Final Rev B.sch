@@ -3121,7 +3121,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.3048" drill="0.508">
+<class number="0" name="default" width="0.4064" drill="0.508">
 <clearance class="0" value="0.5588"/>
 </class>
 <class number="1" name="VCC" width="0.5588" drill="0.508">
@@ -3181,7 +3181,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY2" gate="G$1" x="-76.2" y="55.88"/>
 <instance part="VDD1" gate="G$1" x="0" y="2.54"/>
 <instance part="VDD2" gate="G$1" x="25.4" y="7.62" rot="R90"/>
-<instance part="SUPPLY3" gate="G$1" x="-58.42" y="17.78"/>
+<instance part="SUPPLY3" gate="G$1" x="-60.96" y="15.24"/>
 <instance part="GND1" gate="1" x="40.64" y="5.08" rot="R90"/>
 <instance part="GND2" gate="1" x="-38.1" y="10.16"/>
 <instance part="GND3" gate="1" x="-68.58" y="5.08" rot="R90"/>
@@ -3208,7 +3208,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-55.88" y1="10.16" x2="-55.88" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="17.78" x2="-45.72" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
-<wire x1="-55.88" y1="17.78" x2="-58.42" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="17.78" x2="-60.96" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-55.88" y="17.78"/>
 </segment>
 <segment>
@@ -3390,15 +3390,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="27.94" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="XBEE" gate="G$1" pin="AD2/DIO2"/>
-<wire x1="-22.86" y1="50.8" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="53.34" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="LAUNCHPAD" gate="G$1" pin="P$28"/>
-<wire x1="22.86" y1="30.48" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="PIR" gate="G$1" pin="OUT"/>
@@ -3424,6 +3415,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
 <pinref part="PIR" gate="G$1" pin="VCC"/>
 <wire x1="30.48" y1="7.62" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="XBEE" gate="G$1" pin="AD2/DIO2"/>
+<wire x1="-22.86" y1="50.8" x2="-12.7" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="50.8" x2="-12.7" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="60.96" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="60.96" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="LAUNCHPAD" gate="G$1" pin="P$31"/>
+<wire x1="43.18" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
