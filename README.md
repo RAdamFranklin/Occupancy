@@ -16,4 +16,4 @@ The .brd and .sch files were created using Eagle CS for the Occupancy project. T
 python sqlite database.py is written in python and uses sqlite3 to create a database with a single table with a number of columns capable of storing all the sensor data. 
 
 #Reading Serial and Writing to Sqlite Database
-reading_and_writing_to_sqlite.py is written in python and request data from a sensor node reads in the serial input, converts it from hexadecimal to decimal and then stores it in the sqlite database.
+SerialIOdatabase.py is written in python and request data from a sensor node reads in the serial input, converts it from hexadecimal to decimal and then stores it in the sqlite database.
